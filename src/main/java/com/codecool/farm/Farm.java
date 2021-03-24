@@ -17,7 +17,7 @@ class Farm {
         this.farmAnimals = animals;
     }
 
-    public void feedAnimals(){
+    public void feedAnimals() {
         for (Animal animal : farmAnimals) {
             animal.feed();
         }
@@ -25,7 +25,7 @@ class Farm {
 
     public void butcher(Butcher butcher) {
         for (int i = 0; i < farmAnimals.size(); i++) {
-            if(farmAnimals.get(i).getSize() > 4){
+            if(farmAnimals.get(i).getSize() > 4) {
                 farmAnimals.remove(i);
             }
         }
